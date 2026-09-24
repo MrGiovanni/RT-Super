@@ -16,11 +16,31 @@
 
 [RT-Super](https://papers.miccai.org/miccai-2026/paper/4075_paper.pdf) learns tumor detection and segmentation from **longitudinal CT scans, multi-phase images, and radiology reports**, with few or no tumor masks. At inference, the student needs **one CT scan and no report**.
 
-## Learning from Reports and Longitudinal Images
+**Learning from Reports and Longitudinal Images:**
 
 - **Teacher:** Uses a patient's CT scans and reports to create a high-quality tumor mask for each scan missing ground-truth masks.
 - **Report and consistency supervision:** The teacher is trained with Report Supervision and Consistency Losses. These losses enforce that: segmented tumors must match the reported **tumor count, size, and location**, and their locations must be consistent across time.
 - **Student:** Sees one CT scan and no report. It learns to match the teacher's masks through distillation.
+
+
+## Papers
+
+**RT-Super: Learning Tumor Segmentation from Longitudinal Images and Reports**  
+Pedro R. A. S. Bassi, Wenxuan Li, Hanxue Gu, Jieneng Chen, Xinze Zhou, Zheren Zhu, Sezgin Er, Ibrahim E. Hamamci, Bjoern H. Menze, Gulhan E. Akan, Kang Wang, Yang Yang, Alan L. Yuille, and Zongwei Zhou.  
+*MICCAI 2026, LNCS 16884. Springer Nature Switzerland.*  
+<a href='https://papers.miccai.org/miccai-2026/paper/4075_paper.pdf'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a>
+
+RT-Super builds on **[Report Supervision (R-Super)](https://github.com/MrGiovanni/R-Super)**, which introduced loss functions that use reports to supervise tumor segmentation:
+
+
+<b>Learning Segmentation from Radiology Reports</b> <br/>
+[Pedro R. A. S. Bassi](https://scholar.google.com/citations?user=NftgL6gAAAAJ&hl=en), [Wenxuan Li](https://scholar.google.com/citations?hl=en&user=tpNZM2YAAAAJ), [Jieneng Chen](https://scholar.google.com/citations?user=yLYj88sAAAAJ&hl=zh-CN), Zheren Zhu, Tianyu Lin, [Sergio Decherchi](https://scholar.google.com/citations?user=T09qQ1IAAAAJ&hl=it), [Andrea Cavalli](https://scholar.google.com/citations?user=4xTOvaMAAAAJ&hl=en), [Kang Wang](https://radiology.ucsf.edu/people/kang-wang), [Yang Yang](https://scholar.google.com/citations?hl=en&user=6XsJUBIAAAAJ), [Alan Yuille](https://www.cs.jhu.edu/~ayuille/), [Zongwei Zhou](https://www.zongweiz.com/)* <br/>
+*Johns Hopkins University* <br/>
+MICCAI 2025, [**Best Paper Award**](https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/) (runner-up) <br/>
+<a href='https://www.cs.jhu.edu/~zongwei/publication/bassi2025learning.pdf'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='https://www.cs.jhu.edu/~zongwei/poster/bassi2025miccai_rsuper.pdf'><img src='https://img.shields.io/badge/Poster-PDF-blue'></a>
+<a href='https://www.cs.jhu.edu/news/for-ai-tumor-detection-a-picture-isnt-always-worth-a-thousand-words/'><img src='https://img.shields.io/badge/JHU-News-green'></a>
+[![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/7pamG9DDSJw?si=-376z03g832UyTKB)
+<a href='https://youtu.be/r11X39fH-yU?si=ZOBlHMo1CvN9aVzb'><img src='https://img.shields.io/badge/Oral-RSNA-orange'></a>
 
 ## Results: External Validation
 
@@ -44,19 +64,6 @@ To refine the student's features and output, the teacher uses convolutions. Thes
   </a>
 </p>
 
-## Papers
-
-**RT-Super: Learning Tumor Segmentation from Longitudinal Images and Reports**  
-Pedro R. A. S. Bassi, Wenxuan Li, Hanxue Gu, Jieneng Chen, Xinze Zhou, Zheren Zhu, Sezgin Er, Ibrahim E. Hamamci, Bjoern H. Menze, Gulhan E. Akan, Kang Wang, Yang Yang, Alan L. Yuille, and Zongwei Zhou.  
-*MICCAI 2026, LNCS 16884. Springer Nature Switzerland.*  
-[Paper](https://papers.miccai.org/miccai-2026/paper/4075_paper.pdf) · [Poster](document/MICCAI2026-RT-Super.pptx)
-
-RT-Super builds on **[Report Supervision (R-Super)](https://github.com/MrGiovanni/R-Super)**, which introduced loss functions that use reports to supervise tumor segmentation:
-
-**Learning Segmentation from Radiology Reports**  
-Pedro R. A. S. Bassi, Wenxuan Li, Jieneng Chen, Zheren Zhu, Tianyu Lin, Sergio Decherchi, Andrea Cavalli, Kang Wang, Yang Yang, Alan L. Yuille, and Zongwei Zhou.  
-*MICCAI 2025, pp. 305–315.*  
-[Paper](https://papers.miccai.org/miccai-2025/paper/0049_paper.pdf) · [Springer](https://doi.org/10.1007/978-3-032-04971-1_29) · [Code](https://github.com/MrGiovanni/R-Super)
 
 ## Code & Instructions
 
