@@ -47,7 +47,7 @@ MICCAI 2025, [**Best Paper Award**](https://miccai.org/index.php/about-miccai/aw
 **Trained in the USA, tested in Turkey.** RT-Super surpasses the tested public models in average detection AUC and segmentation Dice across **spleen, esophagus, and uterus tumors**, even without training masks.
 
 <p align="center">
-  <img src="document/external_validation.png" alt="External validation: RT-Super reaches 82 AUC and 30 Dice without training masks, and 84 AUC and 41 Dice with masks. Public models and methods trained on our dataset are compared separately." width="100%">
+  <img src="document/external_validation_2.png" alt="External validation: RT-Super reaches 82 AUC and 30 Dice without training masks, and 84 AUC and 41 Dice with masks. Public models and methods trained on our dataset are compared separately." width="100%">
 </p>
 
 With training masks, RT-Super improves on the strongest tested public model by **20 AUC points and 32 Dice points**. The right-hand plots compare methods trained on our dataset, with and without masks. All models use one CT scan and no report at test time. See <a href="https://papers.miccai.org/miccai-2026/paper/4075_paper.pdf#page=8">Table 2</a> for the full results.</sub>
