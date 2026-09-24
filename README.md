@@ -5,8 +5,8 @@
 <a href="https://papers.miccai.org/miccai-2026/paper/4075_paper.pdf">
   <img src="https://img.shields.io/badge/Paper-PDF-purple" alt="RT-Super paper PDF">
 </a>
-<a href="document/MICCAI2026-RT-Super.pptx">
-  <img src="https://img.shields.io/badge/Poster-PPTX-orange" alt="RT-Super poster">
+<a href="document/MICCAI2026-RT-Super.pdf">
+  <img src="https://img.shields.io/badge/Poster-PDF-orange" alt="RT-Super poster">
 </a>
 <a href="https://github.com/MrGiovanni/RT-Super">
   <img src="https://img.shields.io/badge/GitHub-RT--Super-black?logo=github" alt="RT-Super GitHub">
