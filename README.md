@@ -58,6 +58,41 @@ Pedro R. A. S. Bassi, Wenxuan Li, Jieneng Chen, Zheren Zhu, Tianyu Lin, Sergio D
 *MICCAI 2025, pp. 305–315.*  
 [Paper](https://papers.miccai.org/miccai-2025/paper/0049_paper.pdf) · [Springer](https://doi.org/10.1007/978-3-032-04971-1_29) · [Code](https://github.com/MrGiovanni/R-Super)
 
+## Code & Instructions
+
+Please [click here](https://github.com/MrGiovanni/RT-Super/blob/main/code/README.md)
+
+## Datasets
+
+
+<p align="center">
+  <img src="https://huggingface.co/datasets/AbdomenAtlas/MerlinPlus/resolve/main/documents/tumor_examples.png" alt="Examples of tumor annotations in Merlin Plus" width="100%">
+</p>
+
+RT-Super was originally trained on a private dataset. However, you can train it on public datasets:
+
+**Merlin Plus** is a public dataset with **longitudinal metadata (patient IDs and scan dates) and per-voxel annotations for organs and 9 tumor types** in the Merlin dataset (Stanford, 25,494 CT scans).
+
+<a href="https://huggingface.co/datasets/AbdomenAtlas/MerlinPlus">
+  <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow">
+</a>
+
+
+<a href="https://stanford.redivis.com/datasets/bvj1-5hc2whwf6">
+  <img src="https://img.shields.io/badge/Stanford%20AIMI-Dataset-8C1515">
+</a>
+
+<a href="https://github.com/MrGiovanni/MerlinPlus">
+  <img src="https://img.shields.io/badge/GitHub-MerlinPlus-black?logo=github">
+</a>
+
+
+**CancerVerse** is a public dataset with **longitudinal metadata and per-voxel annotations for organs and 13 tumor types, including 24,168 CT scans**. It has no overlap with Merlin Plus.
+
+<a href="https://huggingface.co/datasets/BodyMaps/CancerVerse">
+  <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow">
+</a>
+
 ## Citations
 
 Please cite RT-Super and the original R-Super paper when using this work:
