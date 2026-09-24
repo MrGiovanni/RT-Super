@@ -29,6 +29,9 @@
 Pedro R. A. S. Bassi, Wenxuan Li, Hanxue Gu, Jieneng Chen, Xinze Zhou, Zheren Zhu, Sezgin Er, Ibrahim E. Hamamci, Bjoern H. Menze, Gulhan E. Akan, Kang Wang, Yang Yang, Alan L. Yuille, and Zongwei Zhou.  
 *MICCAI 2026, LNCS 16884. Springer Nature Switzerland.*  
 <a href='https://papers.miccai.org/miccai-2026/paper/4075_paper.pdf'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a>
+<a href="document/MICCAI2026-RT-Super.pdf">
+  <img src="https://img.shields.io/badge/Poster-PDF-orange" alt="RT-Super poster">
+</a>
 
 RT-Super builds on **[Report Supervision (R-Super)](https://github.com/MrGiovanni/R-Super)**, which introduced loss functions that use reports to supervise tumor segmentation:
 
